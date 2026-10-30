@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>张芮铭 · 个人主页</title>
+  <meta name="description" content="张芮铭的个人主页——学生，持续学习 Python、数据分析与 Web 基础。" />
+  <meta name="theme-color" content="#05070d" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="张芮铭 · 个人主页" />
+  <meta property="og:description" content="学生，持续学习 Python、数据分析与 Web 基础。" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23070b14'/%3E%3Ctext x='50' y='67' font-size='34' font-family='monospace' font-weight='bold' text-anchor='middle' fill='%2322d3ee'%3EZRM%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <!-- 背景装饰层 -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+  <div class="orb orb-3" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- 顶部导航 -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <!-- TODO: 换成你的名字缩写 / 域名 -->
+      <a class="logo" href="#top" aria-label="返回顶部">ZRM<span>.dev</span></a>
+
+      <nav class="nav" id="nav" aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#skills">技能</a>
+        <a href="#experience">经历</a>
+        <a href="#contact">联系</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            HELLO, WORLD <span class="eyebrow-muted">// 持续学习中</span>
+          </p>
+
+          <h1 class="hero-title">
+            你好，我是<br />
+            <span class="gradient-text">张芮铭</span>
+          </h1>
+
+          <p class="hero-typing" aria-label="在读学生">
+            <span class="prompt" aria-hidden="true">&gt;</span>
+            <span id="typing"></span><span class="caret" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero-desc">
+            学习态度端正，责任心强，善于沟通协作，
+            乐于在实践中积累经验、持续成长。
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#experience">
+              查看我的经历
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+
+          <dl class="hero-meta">
+            <div>
+              <dt>坐标</dt>
+              <dd>中国 · 某城市</dd>
+            </div>
+            <div>
+              <dt>状态</dt>
+              <dd>在读学生</dd>
+            </div>
+            <div>
+              <dt>聚焦</dt>
+              <dd>Python · 数据分析 · Web 基础</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- 终端装饰卡片 -->
+        <div class="terminal" aria-hidden="true">
+          <div class="terminal-bar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="terminal-title">~/profile — zsh</span>
+          </div>
+<pre class="terminal-body"><code><span class="t-prompt">$</span> whoami
+<span class="t-out">张芮铭</span>
+
+<span class="t-prompt">$</span> cat profile.json
+{
+  <span class="t-key">"role"</span>: <span class="t-str">"学生"</span>,
+  <span class="t-key">"location"</span>: <span class="t-str">"中国 · 某城市"</span>,
+  <span class="t-key">"learning"</span>: [
+    <span class="t-str">"Python"</span>,
+    <span class="t-str">"pandas"</span>,
+    <span class="t-str">"MySQL"</span>
+  ],
+  <span class="t-key">"status"</span>: <span class="t-str">"持续学习中"</span>
+}
+
+<span class="t-prompt">$</span> <span class="t-cursor">▊</span></code></pre>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="向下滚动">
+        <span class="scroll-cue-line" aria-hidden="true"></span>
+        SCROLL
+      </a>
+    </section>
+
+    <!-- ============ 关于 ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">01</span>
+          <h2>关于我</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal" style="--delay: 80ms">
+            <p>
+              你好！我是 <strong>「张芮铭」</strong>，一名在校学生。学习态度端正，责任心强，善于沟通协作；
+              对待任务踏实细心，能够快速适应新环境与新知识。
+            </p>
+            <p>
+              我具备良好的逻辑思维，乐于主动钻研问题，不断补足自身短板。做事有规划、执行力较好，
+              愿意虚心听取建议，在实践中积累经验，持续提升综合能力。
+            </p>
+          </div>
+
+          <aside class="profile-card reveal" style="--delay: 160ms">
+            <div class="avatar" aria-hidden="true">ZRM</div>
+            <h3 class="profile-name">张芮铭</h3>
+            <p class="profile-role">学生 · Student</p>
+            <p class="profile-loc"><span class="status-dot" aria-hidden="true"></span>中国 · 某城市</p>
+
+            <div class="profile-focus">
+              <p class="profile-focus-label">学习方向</p>
+              <ul class="tags">
+                <li class="tag">Python</li>
+                <li class="tag">数据分析</li>
+                <li class="tag">MySQL</li>
+                <li class="tag">Web 基础</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 技能 ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">02</span>
+          <h2>技能</h2>
+        </div>
+        <p class="section-lead reveal">
+          熟练掌握 Python 基础编程，能使用 pandas 完成数据整理与统计分析；熟悉 MySQL 数据库基础操作，
+          了解 HTML/CSS 前端基础。掌握 Word、Excel、PPT 等办公软件，具备资料整理与文字撰写能力，
+          学习能力较强，愿意持续学习开发相关知识。
+        </p>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal" style="--delay: 60ms">
+            <p class="skill-icon">// programming</p>
+            <h3>编程与数据</h3>
+            <ul class="tags" aria-label="编程与数据技能">
+              <li class="tag">Python</li>
+              <li class="tag">pandas</li>
+              <li class="tag">数据整理</li>
+              <li class="tag">统计分析</li>
+              <li class="tag">MySQL</li>
+              <li class="tag">SQL 增删改查</li>
+              <li class="tag">数据表搭建</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" style="--delay: 140ms">
+            <p class="skill-icon">// frontend</p>
+            <h3>前端基础</h3>
+            <ul class="tags" aria-label="前端技能">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">静态页面</li>
+              <li class="tag">基础页面布局</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" style="--delay: 220ms">
+            <p class="skill-icon">// office &amp; general</p>
+            <h3>办公与综合</h3>
+            <ul class="tags" aria-label="办公与综合能力">
+              <li class="tag">Word</li>
+              <li class="tag">Excel</li>
+              <li class="tag">PPT</li>
+              <li class="tag">文档排版</li>
+              <li class="tag">图表制作</li>
+              <li class="tag">PDF 转换</li>
+              <li class="tag">表格函数</li>
+              <li class="tag">资料整理</li>
+              <li class="tag">文字撰写</li>
+              <li class="tag">故障排查</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 经历 ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">03</span>
+          <h2>经历</h2>
+        </div>
+        <p class="section-lead reveal">在校期间的课程实训、小组协作与校园实践。</p>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <p class="timeline-date">课程实训</p>
+            <div class="timeline-card">
+              <h3>课程实训与项目练习</h3>
+              <p class="timeline-org">在校期间</p>
+              <ul class="timeline-list">
+                <li>认真完成各门课程实训任务，参与数据库、Python 数据分析等课程项目。</li>
+                <li>独立完成数据表搭建、数据录入与汇总统计，调试代码并解决运行报错。</li>
+                <li>逐步熟悉项目开发的基础流程，养成规范的操作习惯。</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <p class="timeline-date">小组协作</p>
+            <div class="timeline-card">
+              <h3>小组作业与团队协作</h3>
+              <p class="timeline-org">在校期间</p>
+              <ul class="timeline-list">
+                <li>负责资料搜集、文档撰写与成果整理，与组员沟通分工。</li>
+                <li>按计划推进任务，按时完成交付。</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <p class="timeline-date">课余实践</p>
+            <div class="timeline-card">
+              <h3>办公技能与校园实践</h3>
+              <p class="timeline-org">课余时间</p>
+              <ul class="timeline-list">
+                <li>主动练习 Word、Excel、PPT，掌握文档排版、PDF 转换与表格函数运用，提升办公效率。</li>
+                <li>积极参与班级和校园实践活动，做好活动记录与材料整理，锻炼沟通协调能力。</li>
+                <li>遇到不懂的问题主动查阅资料、请教老师和同学。</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <p class="experience-note reveal">
+          通过一系列实践，我夯实了计算机基础，理解了规范开发、严谨做事的重要性。我清楚自身还有很多不足，
+          后续会继续深耕专业内容，多动手实操，积累项目经验，努力把理论转化为实操能力，为之后的实习和就业打好基础。
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 联系 ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="section-index">04 // contact</p>
+          <h2>
+            有想法？<br />
+            <span class="gradient-text">一起把它做出来。</span>
+          </h2>
+          <p class="contact-sub">
+            无论是交流学习、项目合作，还是想聊聊技术，都欢迎给我发邮件。<br />
+            我通常会在 24 小时内回复。
+          </p>
+
+          <div class="email-row">
+            <!-- TODO: 换成你的邮箱 -->
+            <a class="email-link" href="mailto:hello@example.com">hello@example.com</a>
+            <button class="copy-btn" id="copyEmail" type="button" data-copy="hello@example.com">复制</button>
+          </div>
+          <p class="copy-status" id="copyStatus" role="status" aria-live="polite"></p>
+
+          <ul class="socials" aria-label="社交链接">
+            <!-- TODO: 换成你的主页链接 -->
+            <li><a class="social" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a class="social" href="https://juejin.cn/" target="_blank" rel="noopener noreferrer">掘金</a></li>
+            <li><a class="social" href="https://x.com/" target="_blank" rel="noopener noreferrer">X / Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> 张芮铭 · 保留所有权利</p>
+      <p class="mono">Built with HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
